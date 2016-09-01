@@ -1,0 +1,36 @@
+scalar Date
+
+type Info {
+  message: String!
+  time: Date!
+}
+
+type User {
+  id: ID!
+  name: String
+}
+
+Widget {
+  id: ID!
+  color: String!
+  sprocketCount: Int!
+  owner: String!
+}
+
+type Query {
+  auth: User
+  info: Info
+  surveyValid(email: String!): Boolean
+  widget: [Widget!]
+}
+
+type Mutation {
+  login(name: String!): User
+  logout
+  updateWidget(id: ID!, color: String, sprocketCount: Int, owner: String): Widget
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}

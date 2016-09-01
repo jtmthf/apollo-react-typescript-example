@@ -1,0 +1,63 @@
+{
+  "name": "apollo-react-typescript-example",
+  "version": "0.0.0",
+  "description": "A full stack example application utilizing Apollo, Redux, Webpack, TypeScript, and React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:web:server:dev": "webpack --env.web --env.server --env.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtmthf/apollo-react-typescript-example.git"
+  },
+  "keywords": [
+    "react",
+    "apollo",
+    "graphql",
+    "typescript",
+    "redux",
+    "webpack"
+  ],
+  "author": "Jack Moore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jtmthf/apollo-react-typescript-example/issues"
+  },
+  "homepage": "https://github.com/jtmthf/apollo-react-typescript-example#readme",
+  "devDependencies": {
+    "@types/koa": "^2.0.30",
+    "@types/koa-bodyparser": "^3.0.18",
+    "@types/koa-router": "^7.0.20",
+    "@types/node": "^6.0.35",
+    "@types/systemjs": "^0.19.29",
+    "@types/webpack": "^1.12.33",
+    "awesome-typescript-loader": "^2.2.1",
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.3",
+    "ts-loader": "^0.8.2",
+    "ts-node": "^1.3.0",
+    "tslint": "^3.14.0-dev.1",
+    "typescript": "^2.0.2",
+    "universal-webpack": "^0.1.37",
+    "webpack": "^2.1.0-beta.21",
+    "webpack-node-externals": "^1.3.3"
+  },
+  "dependencies": {
+    "apollo-client": "^0.4.11",
+    "apollo-server": "^0.2.5",
+    "graphql": "^0.6.2",
+    "koa": "^2.0.0-alpha.5",
+    "koa-bodyparser": "^3.2.0",
+    "koa-router": "^7.0.1",
+    "react": "^15.3.1",
+    "react-apollo": "^0.4.6",
+    "react-dom": "^15.3.1",
+    "react-helmet": "^3.1.0",
+    "react-router": "^2.6.1",
+    "redux": "^3.5.2",
+    "source-map-support": "^0.4.2"
+  }
+}
